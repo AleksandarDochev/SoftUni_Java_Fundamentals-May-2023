@@ -1,11 +1,14 @@
-package src.BasicSyntax.code;
-
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class codePresets {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        //---------------Numerical print out manipulations ---------------------------
+        int meters = Integer.parseInt(scanner.nextLine());
+        double km = meters / 1000.0;
+        System.out.printf("%.2f",km); //moves dot from end to begging with 2 spots, example 100 to 1.00
+        //---------------Numerical print out manipulations ---------------------------
         /////////
         int [] arrayXX = Arrays.stream(scanner.nextLine()        //This is a massive that READS DATA from console and takes line given "24 50 36 70" and reads the elements
                      .split(" "))                          // We parse the data from xxxx with one space intervals and put in a massive with these individual elements  ["24", "50", "36", "70"]
@@ -31,6 +34,8 @@ public class codePresets {
             sum = sum + num;
         }
 //------------------------------------------------------------------------------------------
+
+
 
     }
 }
