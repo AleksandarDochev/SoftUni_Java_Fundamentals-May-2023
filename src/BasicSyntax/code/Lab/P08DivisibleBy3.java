@@ -1,4 +1,4 @@
-package src.BasicSyntax.code.Lab;
+package BasicSyntax.code.Lab;
 
 public class P08DivisibleBy3 {
     public static void main(String[] args) {
