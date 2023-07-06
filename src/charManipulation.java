@@ -1,5 +1,3 @@
-package src.BasicSyntax.code;
-
 public class charManipulation {
     public static void main(String[] args) {
         String word = "Desislava";
