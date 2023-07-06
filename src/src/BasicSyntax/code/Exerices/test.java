@@ -1,16 +1,17 @@
-//package src.BasicSyntax.code.Exerices;
-//
-//public class test {
-//
-//    enum JobStatus{
-//        success,FAIL;
-//    }
-//    enum TestResult{
-//        pass,FAIL;
-//    }
-//   // public static void main(String[] args) {
-//        //JobStatus js = JobStatus.FAIL;
-//        //TestResult tr = TestResult.FAIL;
-//        //System.out.println(js.equals(tr));
-//        //System.out.println(js == tr);
-//    //}
+/*
+package src.BasicSyntax.code.Exerices;
+
+import java.util.Scanner;
+
+public class test {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        byte age = Byte.parseByte(scanner.nextLine());
+
+        System.out.println(Byte.MIN_VALUE);
+        System.out.println(Byte.MAX_VALUE);
+
+    }
+}*/

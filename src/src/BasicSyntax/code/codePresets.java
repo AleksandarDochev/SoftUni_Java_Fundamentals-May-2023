@@ -24,6 +24,13 @@ public class codePresets {
         int xx = Integer.parseInt(scanner.nextLine());
         String xxx = scanner.nextLine();
         double x = Double.parseDouble(scanner.nextLine());
+//--------------------Basic line scanner for continuous reading from console and adding to int ----------------
+        int sum = 0;
+        while (true){
+            int num = Integer.parseInt(scanner.nextLine());
+            sum = sum + num;
+        }
+//------------------------------------------------------------------------------------------
 
     }
 }
