@@ -1,4 +1,4 @@
-package DataTypesAndVariablesLab.code.Lab;
+package DataTypesAndVariablesLab.code.Lab.IntegerAndRealNumbers;
 
 import java.math.BigDecimal;
 import java.util.Scanner;
