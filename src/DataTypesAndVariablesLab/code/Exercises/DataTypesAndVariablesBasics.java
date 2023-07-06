@@ -2,7 +2,7 @@ package DataTypesAndVariablesLab.code.Exercises;
 
 import java.util.Scanner;
 
-public class DataTypesAndVariablesBisics {
+public class DataTypesAndVariablesBasics {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
