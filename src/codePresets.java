@@ -3,7 +3,15 @@ import java.util.Scanner;
 
 public class codePresets {
     public static void main(String[] args) {
+        //---Console input scanners---------
         Scanner scanner = new Scanner(System.in);
+        int xx = Integer.parseInt(scanner.nextLine());
+        String xxx = scanner.nextLine();
+        double x = Double.parseDouble(scanner.nextLine());
+        char symbol = scanner.nextLine().charAt(0);
+
+        //---Console input scanners---------
+
         //---------------Numerical print out manipulations ---------------------------
         int meters = Integer.parseInt(scanner.nextLine());
         double km = meters / 1000.0;
@@ -23,10 +31,6 @@ public class codePresets {
         arrayXXX [0] = 10; //Here in the 'arrayXXX' on position '0' we put the data '10'
         //
 
-
-        int xx = Integer.parseInt(scanner.nextLine());
-        String xxx = scanner.nextLine();
-        double x = Double.parseDouble(scanner.nextLine());
 //--------------------Basic line scanner for continuous reading from console and adding to int ----------------
         int sum = 0;
         while (true){

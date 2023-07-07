@@ -1,9 +1,16 @@
+import DataTypesAndVariablesLab.code.Lab.IIDataTypesAndTypeConversion.P08_LowerorUpper;
+
 public class charManipulation {
     public static void main(String[] args) {
         String word = "Desislava";
         System.out.println(word.length());//broi na sumvolite
         System.out.println(word.charAt(0));//puwa bukva
         System.out.println(word.charAt(word.length() - 1));//posledna bukwa
+
+        //----------Char lower upper case detection , scanning --------
+        char valueChar = 'a';
+        // GO here >>> P08_LowerorUpper.main();
+        //----------Char lower upper case detection , scanning --------
 
         //length is 9 characters BUT
         //chars are not position like that
