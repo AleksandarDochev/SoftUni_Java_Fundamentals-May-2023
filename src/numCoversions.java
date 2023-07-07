@@ -49,5 +49,10 @@ public class numCoversions {
         }
         /////------take numbers from last position of saved int number --------
 
+        //-----------see or get ASCII code number from table for a Number
+        int number = 65;
+        System.out.println((char) number); // we get A
+        //-----------see or get ASCII code number from table for a Symbol
+
     }
 }

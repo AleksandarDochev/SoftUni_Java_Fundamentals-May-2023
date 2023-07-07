@@ -15,5 +15,10 @@ public class charManipulation {
         //because we count form position 0 so at Desislava has  length 9
         //but position 0 to 8 because we start counting from 0
 
+        //-----------see or get ASCII code number from table for a Symbol
+        char letter ='F';
+        System.out.println((int) letter); // we get 70
+        //-----------see or get ASCII code number from table for a Symbol
+
     }
 }
