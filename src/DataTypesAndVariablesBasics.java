@@ -1,5 +1,3 @@
-package DataTypesAndVariablesLab.code.Lab;
-
 import java.util.Scanner;
 
 public class DataTypesAndVariablesBasics {

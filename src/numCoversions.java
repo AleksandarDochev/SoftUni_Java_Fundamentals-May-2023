@@ -29,6 +29,10 @@ public class numCoversions {
                 "\nCasted big number conversion to int  : %s",bigNumber,extremelyBigNumber,extremelyBigNumberCast);
         ////////////////-BigDecimal calculation for finances , high precision , very high numbers-----------
 
-
+        /////////////// -- Print float or double like a normal number like decimal float ot int print
+        double doublebig = 4534656 * 34352;
+        float floatbig   = 4534656 * 34352;
+        System.out.printf("\ndoublebig : %.0f \nfloatbig : %.0f \n",doublebig,floatbig);
+        /////////////// -- Print float or double like a normal number like decimal float ot int print
     }
 }
