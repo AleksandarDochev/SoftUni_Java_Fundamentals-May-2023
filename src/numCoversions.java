@@ -1,4 +1,5 @@
 import java.math.BigDecimal;
+import java.util.Scanner;
 
 public class numCoversions {
     public static void main(String[] args) {
@@ -34,5 +35,19 @@ public class numCoversions {
         float floatbig   = 4534656 * 34352;
         System.out.printf("\ndoublebig : %.0f \nfloatbig : %.0f \n",doublebig,floatbig);
         /////////////// -- Print float or double like a normal number like decimal float ot int print
+
+        /////------take numbers from last position of saved int number --------
+        Scanner scanner = new Scanner(System.in);
+        int inputNumber = Integer.parseInt(scanner.nextLine());
+        int sum = 0;
+
+        while (inputNumber>0){
+
+            int lastDigit = inputNumber % 10;       //how to get the last digit from a number
+            int sumAndLastDigit = sum + lastDigit ;
+            inputNumber = inputNumber / 10;        //How to remove the last digit from and int number
+        }
+        /////------take numbers from last position of saved int number --------
+
     }
 }
