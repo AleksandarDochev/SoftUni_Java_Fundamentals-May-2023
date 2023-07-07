@@ -1,4 +1,4 @@
-package DataTypesAndVariablesLab.code.Lab.IntegerAndRealNumbers;
+package DataTypesAndVariables.code.Lab.IntegerAndRealNumbers;
 
 import java.util.Scanner;
 

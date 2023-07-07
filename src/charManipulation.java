@@ -1,5 +1,3 @@
-import DataTypesAndVariablesLab.code.Lab.IIDataTypesAndTypeConversion.P08_LowerorUpper;
-
 public class charManipulation {
     public static void main(String[] args) {
         String word = "Desislava";

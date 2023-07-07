@@ -1,4 +1,4 @@
-package DataTypesAndVariablesLab.code.Lab.IIDataTypesAndTypeConversion;
+package DataTypesAndVariables.code.Lab.IIDataTypesAndTypeConversion;
 
 import java.util.Scanner;
 
