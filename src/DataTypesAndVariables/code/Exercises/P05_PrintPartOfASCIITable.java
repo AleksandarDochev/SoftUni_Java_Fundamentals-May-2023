@@ -11,7 +11,7 @@ public class P05_PrintPartOfASCIITable {
 
         for (int code = startCode; code <= endCode; code++) {
 
-            System.out.println((char)code+" ");
+            System.out.print((char)code+" ");
         }
 
     }
