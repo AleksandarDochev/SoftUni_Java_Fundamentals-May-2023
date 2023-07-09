@@ -1,9 +1,10 @@
 public class charManipulation {
     public static void main(String[] args) {
         String word = "Desislava";
-        System.out.println(word.length());//broi na sumvolite
-        System.out.println(word.charAt(0));//puwa bukva
-        System.out.println(word.charAt(word.length() - 1));//posledna bukwa
+        System.out.println("Word analyzed is :"+word);
+        System.out.println("word length: "+word.length());//broi na sumvolite
+        System.out.println("word first letter "+word.charAt(0));//puwa bukva
+        System.out.println("word last letter "+word.charAt(word.length() - 1));//posledna bukwa
 
         //----------Char lower upper case detection , scanning --------
         char valueChar = 'a';
@@ -17,8 +18,13 @@ public class charManipulation {
 
         //-----------see or get ASCII code number from table for a Symbol
         char letter ='F';
-        System.out.println((int) letter); // we get 70
+        System.out.println("see or get ASCII code number from table for a Symbol : "+letter+" is "+(int) letter); // we get 70
         //-----------see or get ASCII code number from table for a Symbol
+
+        //-----------see or get ASCII code char from table for a Number
+        int number = 60;
+        System.out.println("see or get ASCII code char from table for a Number  : "+number+" is "+(char)number); //we get <
+        //-----------see or get ASCII code char from table for a Number
 
     }
 }
