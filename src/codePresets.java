@@ -31,22 +31,22 @@ public class codePresets {
         arrayXXX [0] = 10; //Here in the 'arrayXXX' on position '0' we put the data '10'
         //
 
-//--------------------Basic line scanner for continuous reading from console and adding to int ----------------
-        int sum = 0;
-        while (true){
-            int num = Integer.parseInt(scanner.nextLine());
-            sum = sum + num;
-        }
-//--------------------DIVISIONS----------------------------------
-//        /*System.out.println(10 / 4); // 2 (integral division)
-//        System.out.println(10 / 4.0); // 2.5 (real division)
-//        System.out.println(10 / 0.0); // Infinity
-//        System.out.println(-10 / 0.0); // -Infinity
-//        System.out.println(0 / 0.0); // NaN (not a number)
-//        System.out.println(8 % 2.5); // 0.5 (3 * 2.5 + 0.5 = 8)
-//        System.out.println(10 / 0); // ArithmeticException*/
-//--------------------DIVISIONS----------------------------------
 
-
+        //--------------------Basic line scanner for continuous reading from console and adding to int ----------------
+//        int sum = 0;
+//        while (true){
+//            int num = Integer.parseInt(scanner.nextLine());
+//            sum = sum + num;
+//        }
+        //--------------------Basic line scanner for continuous reading from console and adding to int ----------------
+//--------------------DIVISIONS----------------------------------
+        System.out.println(10 / 4); // 2 (integral division)
+        System.out.println(10 / 4.0); // 2.5 (real division)
+        System.out.println(10 / 0.0); // Infinity
+        System.out.println(-10 / 0.0); // -Infinity
+        System.out.println(0 / 0.0); // NaN (not a number)
+        System.out.println(8 % 2.5); // 0.5 (3 * 2.5 + 0.5 = 8)
+        System.out.println(10 / 0); // ArithmeticException*/
+//--------------------DIVISIONS----------------------------------
     }
 }
