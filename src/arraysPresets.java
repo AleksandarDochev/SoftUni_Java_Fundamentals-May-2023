@@ -6,9 +6,18 @@ public class arraysPresets {
 
         Scanner scanner = new Scanner(System.in);
 
+        //--------------------Reading elements only-------------
+        String[] stringArr0 = scanner.nextLine().split(" ");
+        for (String elementReaderOnlyInForCycle : stringArr0) {
+            System.out.println(elementReaderOnlyInForCycle);
+        }
+        //--------------------Reading elements only-------------
+
 
         //Arrays presets Integer array , setting length ,filling it with data on each position , reading it out backwards -----------------------------------------
+
         int num = Integer.parseInt(scanner.nextLine());
+        String[] stringArr = scanner.nextLine().split(" ");
         int[] numbersArr = new int[num]; //massive n here is the amount of elements
         for (int i = 0; i < numbersArr.length ; i++) {
             numbersArr[i] = Integer.parseInt(scanner.nextLine());
@@ -41,7 +50,39 @@ public class arraysPresets {
         String input2 = scanner.nextLine();
         //we make int array we get the input and we split with space " " , then we map it to every element "e" and we send it back
         int[] numbersArrFromString = Arrays.stream(input2.split(" ")).mapToInt(e -> Integer.parseInt(e)).toArray();
-        //Arrays transfer String array to int array      Way 1------------------------------------------------------------------------
+        //Arrays transfer String array to int array      Way 2------------------------------------------------------------------------
+
+        //Arrays transfer String array to int array      Way 3------------------------------------------------------------------------
+        //create  int array   . get the input and split it with " ". and map it to the array length as integers
+        String input3 = scanner.nextLine();
+        int[] numbersArr3 = Arrays.stream(input3.split(" ")).mapToInt(Integer::parseInt).toArray();
+        //Arrays transfer String array to int array      Way 3------------------------------------------------------------------------
+
+        //Reading an Array from end to beginning Replacing arrays elements with other elements -----------------------------------------------------
+        String input4 = "a b c d e ";
+        String[] inputArr = input4.split(" ");
+        //or String[] inputArr2 = scanner.nextLine().split(" ");
+
+        //we write the /2 so we don't reach the "c" in the middle when we exchange elements
+        for (int i = 0; i < inputArr.length/2; i++) {
+            String oldElement = inputArr[i];
+            //we put the -1 for the first iteration so we get the last symbol its 5-1-i(witch is 0) = 4
+            //and for all the following we get - 1 to get the numbers one way back and i to move accordingly
+            inputArr[i] = inputArr[inputArr.length-1 - i];
+            inputArr[inputArr.length-1 - i] = oldElement;
+        }
+        //Reading an Array from end to beginning Replacing arrays elements with other elements -----------------------------------------------------
+
+        System.out.println(String.join(" ",inputArr)); // how to print string contents
+
+        //--------------ForEach reading massive and array ------------------------
+        int[] numbersArr8 = {1,2,3,4,5};
+        for (int numberInFor : numbersArr8){
+            System.out.print(numberInFor + " ");
+        }
+        //--------------ForEach reading massive and array ------------------------
+
+
 
 
     }
