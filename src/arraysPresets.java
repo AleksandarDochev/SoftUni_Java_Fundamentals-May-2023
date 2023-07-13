@@ -6,6 +6,21 @@ public class arraysPresets {
 
         Scanner scanner = new Scanner(System.in);
 
+        //------------------- POPULATE integer and print out integer array --------------------------
+        int iterations = Integer.parseInt(scanner.nextLine());
+        int[] numbersArr90= new int[iterations]; //array new int[iterations] here is the amount of elements
+        int sum =0;
+        for (int i = 0; i < numbersArr90.length; i++) {
+            numbersArr90 [i] = Integer.parseInt(scanner.nextLine());
+            sum += numbersArr90[i];
+
+        }
+        for (int i = 0; i < numbersArr90.length; i++) {
+            System.out.printf("%d ",numbersArr90[i]);
+        }
+        System.out.printf("%n%d",sum);
+        //------------------- POPULATE integer and print out integer array --------------------------
+
         //--------------------Reading elements only-------------
         String[] stringArr0 = scanner.nextLine().split(" ");
         for (String elementReaderOnlyInForCycle : stringArr0) {
