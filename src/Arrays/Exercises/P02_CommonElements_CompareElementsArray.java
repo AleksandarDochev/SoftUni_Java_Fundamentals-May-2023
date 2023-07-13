@@ -11,15 +11,15 @@ public class P02_CommonElements_CompareElementsArray {
 
         String[] firstRowArr = firstRowRawInput.split(" ");
         String[] secondRowArr = secondRowRawInput.split(" ");
-        String doubles = "";
+        String dublicatedElements = "";
 
         for (int i = 0; i < secondRowArr.length; i++) {
             String currentElementSecondRowArr = secondRowArr[i];
             for (int j = 0; j < firstRowArr.length; j++) {
                 String currentElementFirstRowArr = firstRowArr[j];
                 if (currentElementFirstRowArr.equals(currentElementSecondRowArr)){
-                    doubles = currentElementFirstRowArr;
-                    System.out.print(doubles+" ");
+                    dublicatedElements = currentElementFirstRowArr;
+                    System.out.print(dublicatedElements+" ");
                 }
             }
         }
