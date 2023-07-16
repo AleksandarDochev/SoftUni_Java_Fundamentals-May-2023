@@ -3,8 +3,17 @@ import java.util.Scanner;
 
 public class codePresets {
     public static void main(String[] args) {
-        //---Console input scanners---------
         Scanner scanner = new Scanner(System.in);
+        //----take data from a specific spot from an input line or string and parse into string--------
+        String command =scanner.nextLine();
+        String command1 = "swap 2 4";
+        int index1 = Integer.parseInt(command1.split(" ")[1]);
+        int index2 = Integer.parseInt(command1.split(" ")[2]);
+        System.out.println(index2+" "+index1);
+        //----take data from a specific spot from an input line or string and parse into string--------
+
+        //---Console input scanners---------
+
         int xx = Integer.parseInt(scanner.nextLine());
         String xxx = scanner.nextLine();
         double x = Double.parseDouble(scanner.nextLine());

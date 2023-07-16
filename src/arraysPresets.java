@@ -6,15 +6,16 @@ public class arraysPresets {
 
         Scanner scanner = new Scanner(System.in);
 
-        // ---------------- MASSIVES / ARRYS print outs --------------------
+        // ---------------- Massive / ARRaYS  clean print outs --------------------
         String[] numbersArr463 = {"51","47","32","61","21"};
-
+        int[] numbersArr400 = {1,2,3,4,5};
         for (String element : numbersArr463){
             System.out.print(element + " ");  //This prints out massives by each element
         }
 
-        System.out.print(String.join(" ",numbersArr463));//This only work for String printouts
-        // ---------------- MASSIVES / ARRYS print outs --------------------
+        System.out.print(String.join(" ",numbersArr463));//This only work for String printouts clean
+        System.out.println(Arrays.toString(numbersArr400).replace("[","").replace("]",""));//Take ing arrays and print it out clean
+        // ---------------- Massive / ARRaYS clean print outs --------------------
 
         //------------ConversionToWholeNumbers----------------------------------------
         int [] numbersArr78686 = Arrays.stream(scanner.nextLine()          //"1 4 3 2"
@@ -115,6 +116,13 @@ public class arraysPresets {
         }
         //--------------ForEach reading massive and array ------------------------
 
+        //----take data from a specific spot from an input line or string and parse into string--------
+        String command =scanner.nextLine();
+        String command1 = "swap 2 4";
+        int index1 = Integer.parseInt(command1.split(" ")[1]);
+        int index2 = Integer.parseInt(command1.split(" ")[2]);
+        System.out.println(index2+" "+index1);
+        //----take data from a specific spot from an input line or string and parse into string--------
 
 
 
