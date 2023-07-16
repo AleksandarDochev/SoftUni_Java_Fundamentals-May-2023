@@ -11,11 +11,11 @@ public class P06_EqualSums {
                         .split(" "))                     //["1","4","3","2"]
                 .mapToInt(Integer::parseInt)           //[1,4,3,2]
                 .toArray();
-        int leftSum = 0;
-        int rightSum = 0;
-        for (int index = 0; index < numbersArr.length - 1; index++) {
-            int currentNumber = numbersArr[index];
 
+        for (int index = 0; index < numbersArr.length; index++) {
+            int currentNumber = numbersArr[index];
+            int leftSum = 0;
+            int rightSum = 0;
             for (int leftIndex = 0; leftIndex < index; leftIndex++) {
                 leftSum += numbersArr[leftIndex];
             }
@@ -24,8 +24,8 @@ public class P06_EqualSums {
             }
 
             if (leftSum == rightSum) {
-                System.out.println(index);
-                return;
+                 System.out.println(index);
+                 return;
             }
         }
         System.out.println("no");
