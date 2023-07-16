@@ -16,6 +16,14 @@ public class arraysPresets {
         System.out.print(String.join(" ",numbersArr463));//This only work for String printouts
         // ---------------- MASSIVES / ARRYS print outs --------------------
 
+        //------------ConversionToWholeNumbers----------------------------------------
+        int [] numbersArr78686 = Arrays.stream(scanner.nextLine()          //"1 4 3 2"
+                        .split(" "))                     //["1","4","3","2"]
+                        .mapToInt(Integer::parseInt)           //[1,4,3,2]
+                        .toArray();
+        //-------------ConversionToWholeNumbers-------------------------------------
+
+
         //------------------- POPULATE integer and print out integer array --------------------------
         int iterations = Integer.parseInt(scanner.nextLine());
         int[] numbersArr90= new int[iterations]; //array new int[iterations] here is the amount of elements
