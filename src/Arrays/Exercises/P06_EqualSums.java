@@ -11,21 +11,21 @@ public class P06_EqualSums {
                         .split(" "))                     //["1","4","3","2"]
                 .mapToInt(Integer::parseInt)           //[1,4,3,2]
                 .toArray();
-
+        int leftSum = 0;
+        int rightSum = 0;
         for (int index = 0; index < numbersArr.length - 1; index++) {
             int currentNumber = numbersArr[index];
-            int leftSum = 0;
-            int rightSum = 0;
+
             for (int leftIndex = 0; leftIndex < index; leftIndex++) {
-                leftSum = leftIndex + numbersArr[leftIndex];
+                leftSum += numbersArr[leftIndex];
             }
-            for (int rightIndex = index + 1; rightIndex < numbersArr.length - 1; rightIndex++) {
+            for (int rightIndex = index + 1; rightIndex < numbersArr.length; rightIndex++) {
                 rightSum += numbersArr[rightIndex];
             }
 
             if (leftSum == rightSum) {
-                System.out.println(numbersArr[index]);
-                //return;
+                System.out.println(index);
+                return;
             }
         }
         System.out.println("no");
