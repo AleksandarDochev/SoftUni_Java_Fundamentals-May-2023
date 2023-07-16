@@ -6,6 +6,16 @@ public class arraysPresets {
 
         Scanner scanner = new Scanner(System.in);
 
+        // ---------------- MASSIVES / ARRYS print outs --------------------
+        String[] numbersArr463 = {"51","47","32","61","21"};
+
+        for (String element : numbersArr463){
+            System.out.print(element + " ");  //This prints out massives by each element
+        }
+
+        System.out.print(String.join(" ",numbersArr463));//This only work for String printouts
+        // ---------------- MASSIVES / ARRYS print outs --------------------
+
         //------------------- POPULATE integer and print out integer array --------------------------
         int iterations = Integer.parseInt(scanner.nextLine());
         int[] numbersArr90= new int[iterations]; //array new int[iterations] here is the amount of elements
