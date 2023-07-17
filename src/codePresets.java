@@ -1,5 +1,6 @@
 import java.util.Arrays;
 import java.util.Scanner;
+import Methods.Lab.P01_SignOfIntegerNumbers;
 
 public class codePresets {
     public static void main(String[] args) {
@@ -13,7 +14,6 @@ public class codePresets {
         //----take data from a specific spot from an input line or string and parse into string--------
 
         //---Console input scanners---------
-
         int xx = Integer.parseInt(scanner.nextLine());
         String xxx = scanner.nextLine();
         double x = Double.parseDouble(scanner.nextLine());
