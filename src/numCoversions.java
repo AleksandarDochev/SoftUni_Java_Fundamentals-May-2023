@@ -1,4 +1,5 @@
 import java.math.BigDecimal;
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class numCoversions {
@@ -11,6 +12,13 @@ public class numCoversions {
 
         System.out.println((int)numDouble);
          ////////////-NUMBER cast ,casting -----------------
+
+        //-------------decimalFormat-------- control number formatting-----------------------
+        //https://docs.oracle.com/javase/tutorial/i18n/format/decimalFormat.html
+        double num4536 = 34525.567777657;
+        DecimalFormat df343= new DecimalFormat("0.###");//12.0000 ->12 12.3454 ->12.346
+        System.out.println(df343.format(num4536));
+        //-------------decimalFormat-------------------------------
 
         ////////////////////////////- NUMBER cas double to integer-
         double years = 100;
