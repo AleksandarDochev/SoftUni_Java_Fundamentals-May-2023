@@ -13,6 +13,11 @@ public class numCoversions {
         System.out.println((int)numDouble);
          ////////////-NUMBER cast ,casting -----------------
 
+        //--------------------------number to String
+        int num43 = 57474;
+        String intToString = Integer.toString(num43);
+        System.out.println(intToString);//now number int type is String
+
         //-------------decimalFormat-------- control number formatting-----------------------
         //use this to remove 000 after . and put numbers if there are
         //https://docs.oracle.com/javase/tutorial/i18n/format/decimalFormat.html
