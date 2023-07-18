@@ -1,5 +1,6 @@
 package Methods.Lab;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class P08_MathPower {
@@ -7,10 +8,11 @@ public class P08_MathPower {
         Scanner scanner = new Scanner(System.in);
         double numInput = Double.parseDouble(scanner.nextLine());
         int numPowerInput = Integer.parseInt(scanner.nextLine());
-        numPowerCalc(numInput,numPowerInput);
+        DecimalFormat df343= new DecimalFormat("0.###");//12.0000 ->12 12.3454 ->12.346
+        System.out.println(df343.format(numPowerCalc(numInput,numPowerInput)));
     }
 
-    public static void numPowerCalc(double num,int power){
-        System.out.println((int)Math.pow(num,power));
+    public static double numPowerCalc(double num,int power){
+        return Math.pow(num,power);
     }
 }

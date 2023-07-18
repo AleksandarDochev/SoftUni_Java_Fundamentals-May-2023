@@ -14,10 +14,13 @@ public class numCoversions {
          ////////////-NUMBER cast ,casting -----------------
 
         //-------------decimalFormat-------- control number formatting-----------------------
+        //use this to remove 000 after . and put numbers if there are
         //https://docs.oracle.com/javase/tutorial/i18n/format/decimalFormat.html
         double num4536 = 34525.567777657;
+        double num4537 = 34525.00000;
         DecimalFormat df343= new DecimalFormat("0.###");//12.0000 ->12 12.3454 ->12.346
-        System.out.println(df343.format(num4536));
+        System.out.println(df343.format(num4536));//34525.568
+        System.out.println(df343.format(num4537));//34525
         //-------------decimalFormat-------------------------------
 
         ////////////////////////////- NUMBER cas double to integer-
