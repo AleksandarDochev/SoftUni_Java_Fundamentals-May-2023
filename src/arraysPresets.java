@@ -6,6 +6,12 @@ public class arraysPresets {
 
         Scanner scanner = new Scanner(System.in);
 
+        //--------Create empty Array , create dynamic length array----------
+        int [] array567 = new int[]{};
+        int [] array5690 = new int[]{56,567,57};
+        System.out.println(array5690.length); // 3
+        //--------Create empty Array , create dynamic length array----------
+
         // ---------------- Massive / ARRaYS  clean print outs --------------------
         String[] numbersArr463 = {"51","47","32","61","21"};
         int[] numbersArr400 = {1,2,3,4,5};
