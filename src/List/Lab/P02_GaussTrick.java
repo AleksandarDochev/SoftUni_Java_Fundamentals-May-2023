@@ -16,16 +16,16 @@ public class P02_GaussTrick {
                 .map(Integer::parseInt)
                 .collect(Collectors.toList());
 
-        int iterationsNumSize = numbersListInteger.size();
-        for (int i = 0; i <= iterationsNumSize/2; i++) {
-            int firstNUm =numbersListInteger.get(i);
-            int lastNUm =numbersListInteger.get(numbersListInteger.size()-1);
-            int sum=firstNUm+lastNUm;
-            numbersListInteger.set(i , sum);
-            numbersListInteger.remove(numbersListInteger.size()-1);
+        int size = numbersListInteger.size();
+        for (int i = 0; i < size / 2; i++) {
+            int firstNum = numbersListInteger.get(i);
+            int secondNum = numbersListInteger.get(numbersListInteger.size() - 1);
+            int sum = firstNum+secondNum;
+            numbersListInteger.set(i, sum);
+            numbersListInteger.remove(numbersListInteger.size() - 1);
         }
         for (int item: numbersListInteger) {
-            System.out.print(item+" ");
+            System.out.print(item +" ");
         }
     }
 
