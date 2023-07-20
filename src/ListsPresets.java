@@ -21,10 +21,17 @@ public class ListsPresets {
         }
         //----------Creating new empty dynamic list--------------------
 
+        //----------Creating a subLIst of list , a list that is part of an existing list
+        List<Integer> numList6578 = new ArrayList<>(Arrays.asList(5,5,6,78,876));
+        //if numList6578 had 4 7 9 0 4
+        //then numList6578SumList would be 4 6 , not taking index 2
+        List<Integer> numList6578SumList = numList6578.subList(0,2);
+        //----------Creating a subLIst of list , a list that is part of an existing list
+
         //--------------List add remove and other operations --------------
         List<String> wordsList2 = new ArrayList<>(Arrays.asList("Ver","Ger","Maria"));
         wordsList2.remove("Maria"); // remove elemnet form the list
-        wordsList2.add(3, "43ggf"); // add element to specific position
+        wordsList2.add(2, "43ggf"); // add element to specific position
         wordsList2.set(2,"Marco");  // replace element in ArrayList
         wordsList2.contains("Ver");
         //--------------List add remove and other operations --------------
@@ -79,7 +86,12 @@ public class ListsPresets {
         /////
         //===============ArrayList print contents foreach with delimeter
 
-
+        //-----------ArrayList print out clean no [] no ,-------
+        List<Integer> numList5765 = new ArrayList<>(Arrays.asList(5,5,6,78,876));
+        System.out.println(); //[5, 5, 6, 78, 876]
+        System.out.println(numList5765.toString().replaceAll("[\\[\\],]",""));
+        //[5, 5, 6, 78, 876] -> 5 5 6 78 876
+        //-----------ArrayList print out clean no [] no ,-------
 
 
     }
