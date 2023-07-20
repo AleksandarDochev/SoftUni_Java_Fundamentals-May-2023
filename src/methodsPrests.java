@@ -1,3 +1,6 @@
+import java.text.DecimalFormat;
+import java.util.List;
+
 public class methodsPrests {
     public static void main(String[] args) {
         String hello = "Hello";
@@ -31,4 +34,19 @@ public class methodsPrests {
         return firstString +" "+ secondString;
     }
     //----------------------------Basic return some Value method -------------------------------------
+
+    //---------method for  join elements with delimeter---------------------
+    //System.out.println(joinMethodElementsByDelimeter(" ",xxxListWeWantTOEditxxx));
+    public static String joinMethodElementsByDelimeter(String delimeterMethodIntake, List<Double> listDoubleMethodIntake){
+        DecimalFormat df= new DecimalFormat("0.###");//12.0000 ->12 12.3454 ->12.346
+        String result="";
+        for (double item:listDoubleMethodIntake) {
+            String numDf=df.format(item)+ delimeterMethodIntake;
+            result +=numDf;
+        }
+        return result;
+    }
+    //---------method for  join elements with delimeter---------------------
+
+
 }
