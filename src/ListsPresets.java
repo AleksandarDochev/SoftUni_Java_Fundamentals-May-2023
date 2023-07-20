@@ -66,6 +66,20 @@ public class ListsPresets {
         //4 5 6 7 89 34 2 -> 4, 5, 6, 7, 89, 34, 2
         //--------ArrayList join function add changes to all elements
 
+        //===============ArrayList print contents foreach with delimeter
+        String input = scanner.nextLine();
+        List<Integer> numbersListInteger767 = Arrays
+                .stream(input.split(" "))
+                .map(Integer::parseInt)
+                .collect(Collectors.toList());
+        /////
+        for (int item: numbersListInteger767) {
+            System.out.println(item+" ");
+        }
+        /////
+        //===============ArrayList print contents foreach with delimeter
+
+
 
 
     }
