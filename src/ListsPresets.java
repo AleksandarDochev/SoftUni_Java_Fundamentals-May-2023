@@ -3,6 +3,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 public class ListsPresets {
@@ -88,6 +89,9 @@ public class ListsPresets {
 
         //-----------ArrayList print out clean no [] no ,-------
         List<Integer> numList5765 = new ArrayList<>(Arrays.asList(5,5,6,78,876));
+        List<String> nameList676 = new ArrayList<>(Arrays.asList("Victor","4iki","Gobler"));
+        System.out.println(String.join(" ",nameList676));
+        System.out.println(numList5765.toString().replaceAll("[\\[\\],]", ""));
         System.out.println(); //[5, 5, 6, 78, 876]
         System.out.println(numList5765.toString().replaceAll("[\\[\\],]",""));
         //[5, 5, 6, 78, 876] -> 5 5 6 78 876

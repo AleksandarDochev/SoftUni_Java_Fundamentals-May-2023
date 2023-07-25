@@ -18,6 +18,7 @@ public class P05_ListManipulationAdvanced {
         while (!input.equals("end")){
             String[] commandArrInput = input.split(" ");
             String command = commandArrInput[0];
+            List<Integer> numLesserSout = new ArrayList<>();
 
             //int number = Integer.parseInt(commandArrInput[1]);
             if (command.equals("Contains")){
@@ -55,6 +56,37 @@ public class P05_ListManipulationAdvanced {
 
                 }
             }
+            if (input.equals("Get sum")){
+                int sum=0;
+                for (String numberString:inputList) {
+                    int numberInt = Integer.parseInt(numberString);
+                    sum+=numberInt;
+                }
+                System.out.println();
+                System.out.println(sum);
+            }
+            if (command.equals("Filter")){
+                if (commandArrInput[1].equals(">=")){
+                    int numBiggerOrEqual = Integer.parseInt(commandArrInput[2]);
+                    for (String numberString:inputList) {
+                        int numberInt = Integer.parseInt(numberString);
+                        if (numberInt>=numBiggerOrEqual){
+                            System.out.print(numberInt+" ");
+                        }
+                    }
+                } else if (commandArrInput[1].equals("<")) {
+                    System.out.println();
+                    int numBiggerOrEqual = Integer.parseInt(commandArrInput[2]);
+                    for (String numberString : inputList) {
+                        int numberInt = Integer.parseInt(numberString);
+                        if (numberInt < numBiggerOrEqual) {
+                            System.out.print(numberInt+" ");
+                        }
+                    }
+                }
+
+            }
+
             input = scanner.nextLine();
             }
 
