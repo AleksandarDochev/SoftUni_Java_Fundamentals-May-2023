@@ -17,6 +17,9 @@ public class ListsPresets {
         for (String e :wordsList) {
             System.out.println(e);
         }
+        if (numList65.isEmpty()){
+            System.out.println("empty");
+        }
         //----------Creating new empty dynamic list--------------------
 
         //----------Creating a subLIst of list , a list that is part of an existing list
@@ -32,6 +35,8 @@ public class ListsPresets {
         wordsList2.add(2, "43ggf"); // add element to specific position
         wordsList2.set(2,"Marco");  // replace element in ArrayList
         wordsList2.contains("Ver");
+        numList6578.removeIf(e -> e <0); //remove negative numbers from list
+        numList6578.removeIf(e -> e % 2 ==0);//remove even number from list
         //--------------List add remove and other operations --------------
 
         //-------------- List flling , population , filling with data  ----------------
