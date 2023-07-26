@@ -35,6 +35,7 @@ public class arraysPresets {
 
         //------------------- POPULATE integer and print out integer array --------------------------
         int iterations = Integer.parseInt(scanner.nextLine());
+        String[] wordsArr = scanner.nextLine().split(" ");//we take the input of the console and put it in a massive
         int[] numbersArr90= new int[iterations]; //array new int[iterations] here is the amount of elements
         int sum =0;
         for (int i = 0; i < numbersArr90.length; i++) {

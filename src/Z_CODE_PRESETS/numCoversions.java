@@ -1,6 +1,7 @@
 package Z_CODE_PRESETS;
 
 import java.math.BigDecimal;
+import java.math.BigInteger;
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
@@ -39,13 +40,16 @@ public class numCoversions {
 
         ////////////////////////////- NUMBER cas double to integer-
 
-        ////////////////-BigDecimal calculation for finances , high precision , very high numbers-----------
+        ////////////////-BigDecimal calculation for finances , high precision , very high numbers ,sum of big numbers-----------
         double bigNumber = 787685.65 * 34325235 *60;
         BigDecimal extremelyBigNumber = new BigDecimal(bigNumber); //normal
         BigDecimal extremelyBigNumberCast = new BigDecimal((int)bigNumber); // cast double to int here
         System.out.printf("\nbigNumber with errors : %s " +
                 "\nNormal big number conversion precise : %s " +
                 "\nCasted big number conversion to int  : %s",bigNumber,extremelyBigNumber,extremelyBigNumberCast);
+        BigInteger firstNum = new BigInteger("4563465476547776575683463452352353643");
+        BigInteger secondNum = new BigInteger("675856856756987696745656");
+        BigInteger sum34 = firstNum.add(secondNum);
         ////////////////-BigDecimal calculation for finances , high precision , very high numbers-----------
 
         /////////////// -- Print float or double like a normal number like decimal float ot int print
