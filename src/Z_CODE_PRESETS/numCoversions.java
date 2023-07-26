@@ -1,3 +1,5 @@
+package Z_CODE_PRESETS;
+
 import java.math.BigDecimal;
 import java.text.DecimalFormat;
 import java.util.Scanner;

@@ -3,7 +3,7 @@ package BasicSyntax.code.Exerices;
 
 import java.util.Scanner;
 
-public class test {
+public class Z_CODE_PRESETS.test {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);

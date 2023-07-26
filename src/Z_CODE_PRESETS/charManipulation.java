@@ -1,3 +1,5 @@
+package Z_CODE_PRESETS;
+
 public class charManipulation {
     public static void main(String[] args) {
         String word = "Desislava";

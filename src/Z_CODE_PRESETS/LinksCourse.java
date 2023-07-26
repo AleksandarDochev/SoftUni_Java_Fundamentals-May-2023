@@ -1,3 +1,5 @@
+package Z_CODE_PRESETS;
+
 public class LinksCourse {
     public static void main(String[] args) {
         //
