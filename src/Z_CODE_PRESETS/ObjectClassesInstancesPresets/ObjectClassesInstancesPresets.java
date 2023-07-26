@@ -1,18 +1,27 @@
-package Z_CODE_PRESETS;
+package Z_CODE_PRESETS.ObjectClassesInstancesPresets;
 
 import java.time.LocalDate;
 import java.util.Random;
 import java.util.Scanner;
 
 public class ObjectClassesInstancesPresets {
-    class Dice{ // this si a class
-        public int sides;
-    }
-    public void roll(){ // this is a public method
-        Random rnd =new Random();
-        int side= rnd.nextInt(6);
+    public static class Song {
+        String typeList; //we
+        String name;
+        String time;
+
+        public Song(String typeList, String name, String time) {
+            // this is the attributes in the class Song
+            //here we say from the class Song(this) we get the String named typeList and we give it
+            //a value that will come from the outside
+            this.typeList = typeList;
+            this.name = name;
+            this.time = time;
+        }
     }
     public static void main(String[] args) {
+
+        Song objectNameInMain = new Song("favourite","Destruction","4:20");
 
 
         //An example of 3 instances of the same object
