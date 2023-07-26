@@ -41,9 +41,17 @@ public class P04_Songs {
         if (command.equals("all")){
             //for class Song , constructor song in our song list
             for (Song song : songList){
-                System.out.println(song.getTypeList());
+                System.out.println(song.getName());
+            }
+        } else {
+            for (Song song :songList){
+                String currentTypeList =song.getTypeList();
+                if (currentTypeList.equals(command)){
+                    System.out.println(song.getName());
+                }
             }
         }
+
     }
 
 }
