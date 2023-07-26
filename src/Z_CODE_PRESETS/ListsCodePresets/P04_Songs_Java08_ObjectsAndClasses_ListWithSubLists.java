@@ -1,10 +1,10 @@
-package Java08_ObjectsAndClasses.Lab;
+package Z_CODE_PRESETS.ListsCodePresets;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class P04_Songs {
+public class P04_Songs_Java08_ObjectsAndClasses_ListWithSubLists {
     public static class Song {
         String typeList; //we
         String name;
@@ -20,12 +20,6 @@ public class P04_Songs {
         public String getTypeList(){
             return this.typeList;
         }
-        public String getName(){
-            return this.name;
-        }
-        public String getTime(){
-            return this.time;
-        }
     }
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -36,13 +30,12 @@ public class P04_Songs {
             String[] songsArr = inputLine.split("_");
             Song currentSong = new Song(songsArr[0],songsArr[1],songsArr[2]);
             songList.add(currentSong);
+            System.out.println();
+
         }
         String command = scanner.nextLine();
         if (command.equals("all")){
-            //for class Song , constructor song in our song list
-            for (Song song : songList){
-                System.out.println(song.getTypeList());
-            }
+            System.out.println(songList.get(0));
         }
     }
 
