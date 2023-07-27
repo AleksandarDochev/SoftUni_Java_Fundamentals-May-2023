@@ -1,10 +1,10 @@
-package Java08_ObjectsAndClasses.Lab;
+package Z_CODE_PRESETS.ObjectClassesInstancesPresets;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class P05_Students {
+public class P05_StudentsListsCalling {
 
     public static class Student {
         String firstName ;

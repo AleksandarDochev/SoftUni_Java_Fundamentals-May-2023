@@ -21,8 +21,11 @@ public class ObjectClassesInstancesPresets {
     }
     public static void main(String[] args) {
 
+        //we create an object of the class that we created -------
+
         Song objectNameInMain = new Song("favourite","Destruction","4:20");
 
+        //we create an object of the class that we created -----
 
         //An example of 3 instances of the same object
         LocalDate birthday1 = LocalDate.of(1996,11,27);
