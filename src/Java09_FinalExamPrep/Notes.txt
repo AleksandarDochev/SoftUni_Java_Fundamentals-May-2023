@@ -1,0 +1,7 @@
+zada4a 1 e textova obrabotka
+zada4a 2  e regular Expression , ili izraz
+zada4a 3 e mapping  (maybe • Associative Arrays
+                           (HashMap, LinkedHachMap, TreeMap);
+                          • Lambda Expressions;
+                          • Stream API (Filtering, Mapping).
+
