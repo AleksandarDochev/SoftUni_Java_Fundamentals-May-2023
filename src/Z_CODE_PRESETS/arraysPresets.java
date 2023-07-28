@@ -133,7 +133,19 @@ public class arraysPresets {
         System.out.println(index2+" "+index1);
         //----take data from a specific spot from an input line or string and parse into string--------
 
+        //------take smallest integer from array , take biggest , sum elements , average
+        // min , max ,sum ,average
+        int [] array5690e = new int[]{56,567,57};
+        int small = Arrays.stream(array5690e).min().getAsInt();
+        int maxnum = Arrays.stream(array5690e).max().getAsInt();
+        int sumArrElements = Arrays.stream(array5690e).sum();
+        System.out.println(small);
+        //------take smallest integer from array
 
+        //-----take all the other elements of an array/massive that are not the smallest
+        int [] array5690ze = new int[]{56,567,57};
+        int others = Arrays.stream(array5690ze).min().orElse(array5690ze.length-1);
+        System.out.println(others);
 
     }
 }
