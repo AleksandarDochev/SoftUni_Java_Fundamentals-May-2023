@@ -1,4 +1,4 @@
-package Z_CODE_PRESETS.RegexPresets;
+package Z_CODE_PRESETS.TextProcessingPresets.RegexPresets;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
