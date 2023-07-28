@@ -41,6 +41,12 @@ public class TextProcessingStringManipulationsBuildingModify {
 
         //SubString operations----------------------------------------
 
+        //String builder add to a string -------------------------------
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < 100; i++) {
+            sb.append("a");
+        }//aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        System.out.println(sb);
 
         //Matcher when to use while and if statements -----------------------
         String dataFromInput ="=Hawai=/Cyprus/=Invalid/invalid==i5valid=/I5valid/=i=";
