@@ -40,10 +40,14 @@ public class AssociativeArrayPresets {
         linkedHashMapNameInCode.remove("564");
         //removing  data from hasmap ---------------------------------
 
-        //adding data to hash map if not present with a check
+        //adding data to hash map if not present with a check v1------------
         if (!hashMapNameInCode.containsKey("ass")){
             hashMapNameInCode.put("ass",69);
         }
+        //adding data to hash map if not present with a check v1------------
+        //adding data to hash map if not present with a check v2------------
+        hashMapNameInCode.putIfAbsent("ass",0);
+        //adding data to hash map if not present with a check v2------------
         //adding stuff to the value of the key
         //so from "ass",69 -> "ass",70
         hashMapNameInCode.put("ass",hashMapNameInCode.get("ass")+1);
