@@ -81,6 +81,7 @@ public class ListsPresets {
         //-----------ArrayList print content out clean no [] no ,with delimiter and etc -------
         List<Integer> numList5765 = new ArrayList<>(Arrays.asList(5,5,6,78,876));
         List<String> nameList676 = new ArrayList<>(Arrays.asList("Victor","4iki","Gobler"));
+        //ArrayList print content out clean very easy and simple
         System.out.println(String.join(" ",nameList676));
         Collections.sort(nameList676); //sorts by Alphabetical name the list
         System.out.println(String.join(" ",nameList676));//prints out sorted

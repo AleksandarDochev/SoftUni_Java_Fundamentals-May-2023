@@ -40,11 +40,14 @@ public class AssociativeArrayPresets {
         linkedHashMapNameInCode.remove("564");
         //removing  data from hasmap ---------------------------------
 
-        //adding data to hash map if not prest with a check
+        //adding data to hash map if not present with a check
         if (!hashMapNameInCode.containsKey("ass")){
             hashMapNameInCode.put("ass",69);
         }
-        //adding data to hash map if not prest with a check
+        //adding stuff to the value of the key
+        //so from "ass",69 -> "ass",70
+        hashMapNameInCode.put("ass",hashMapNameInCode.get("ass")+1);
+        //adding data to hash map if not present with a check
 
         //creating Map only hashmap -----------------
         Map<String,String> newMap = new HashMap<>();
@@ -67,12 +70,38 @@ public class AssociativeArrayPresets {
             System.out.printf("%s - %d%n",entry.getKey(),entry.getValue());
         }
 
-        //Iteration in HashMap & print HashMap---------------------------------------
+        //Iteration in HashMap & print HashMap 2 wa---------------------------------------
+
+        //hashMap with a list inside it as value for a single key----------------------------------------
+        //we create the hashMap with list in it
+        //but we don't have and object created of the list "new ArrayList<>()"
+        LinkedHashMap<String, ArrayList<String>> wordsMapValueList = new LinkedHashMap<>();
+        //so we create it by adding it with .put
+        String wordHashKey = "apples";
+        //we create a key apple and give it a whole list
+        wordsMapValueList.put(wordHashKey,new ArrayList<>());
+        wordsMapValueList.get("apples").add("green");
+        wordsMapValueList.get("apples").add("yellow");
+        wordsMapValueList.get("apples").add("red");
+
+        //if the don't have the key apple we create and give it a whole list
+        if (!wordsMapValueList.containsKey("apples")){
+            wordsMapValueList.put("apples",new ArrayList<>());
+            //we give the list acissiated with the key a value with .add
+            //like we normally work with lists
+            wordsMapValueList.get("apples").add("green");
+            wordsMapValueList.get("apples").add("yellow");
+            wordsMapValueList.get("apples").add("red");
+        }
+        //pint out a ArrayList content from value position in a HashMap
+        System.out.println();
+        System.out.println("This is ArrayList content from value position in a HashMap below");
+        for (Map.Entry<String, ArrayList<String>> entry : wordsMapValueList.entrySet()) {
+            System.out.printf("%s - %s%n",entry.getKey(),String.join(", ", entry.getValue()));
+        }
+        //hashMap with a list inside it as value for a single key----------------------------------------
 
 
-
-//        LinkedHashMap<String, List<Integer>> hashMapWithListAsValue = new LinkedHashMap<>();
-//        hashMapWithListAsValue.put("ass",List.of());
 
     }
 }
