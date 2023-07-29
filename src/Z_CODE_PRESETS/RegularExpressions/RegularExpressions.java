@@ -96,6 +96,10 @@ public class RegularExpressions {
         //\b ([]) \b is when does it start annd end ,that's called borders
         //\b(?<FirstName>[A-Z][a-z]+) (?<SecondName>[A-Z][a-z]+)\b
 
+        //Regular expression separators
+        // if we want to write a speartor that is "/"or"-"or"."
+        // we have to write [\.\-\/]
+
         //REGULAR SUB EXPRESSIONS -----------------------------------------------------------------------------
 
         //Putting our Regex in Java------------------------------------------------------------
