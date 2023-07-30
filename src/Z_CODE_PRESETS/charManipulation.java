@@ -28,5 +28,15 @@ public class charManipulation {
         System.out.println("see or get ASCII code char from table for a Number  : "+number+" is "+(char)number); //we get <
         //-----------see or get ASCII code char from table for a Number
 
+        //@#FreshFisH@#, @###Brea0D@###, @##Che46sE@##, @##Che46sE@###
+        StringBuilder sb = new StringBuilder();
+        String barcode = "@##Che46sE@##";
+        for (int j = 0; j < barcode.length(); j++) {
+            char symbol = barcode.charAt(j);
+            if (Character.isDigit(symbol)){
+
+            }
+        }
+
     }
 }

@@ -122,6 +122,8 @@ public class RegularExpressions {
         String inputText = scanner.nextLine();
         String regex =""; //Regex pattern
         Pattern pattern = Pattern.compile(regex); //Regex pattern compiler for Java
+        //OR we create an empty Matcher that we can call later
+        //Matcher matcher = null
         Matcher matcher = pattern.matcher(inputText); //we get the compiled regex and we applie it to a input and we save the result to a matcher
         while (matcher.find()){ //so while matcher is true(by default) that's why we don't write =true
             System.out.println(matcher.group()+" ");//we print out groups stored in the matcher starting from group1
