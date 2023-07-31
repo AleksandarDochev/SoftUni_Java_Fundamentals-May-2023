@@ -6,6 +6,8 @@ public class test {
 
         boolean isTrue = true;
         //
+        int two = 1;
+        int one = 2;
 
 
     }

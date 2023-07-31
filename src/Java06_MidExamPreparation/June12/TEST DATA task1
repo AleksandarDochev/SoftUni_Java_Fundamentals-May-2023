@@ -1,0 +1,36 @@
+Input:
+
+5
+25
+30
+12
+19
+24
+16
+20
+
+Output:
+
+Max Bonus: 34.
+The student has attended 24 lectures.
+
+Input:
+
+10
+30
+14
+8
+23
+27
+28
+15
+17
+25
+26
+5
+18
+
+Output:
+
+Max Bonus: 18.
+The student has attended 28 lectures.
