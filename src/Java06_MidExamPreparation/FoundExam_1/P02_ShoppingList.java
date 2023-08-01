@@ -10,11 +10,12 @@ public class P02_ShoppingList {
         Scanner scanner = new Scanner(System.in);
         String items = scanner.nextLine();
         List<String> itemsList = Arrays.stream(items.split("!")).collect(Collectors.toList());
-        String[] command = scanner.nextLine().split(" ");
+        String inputCommand =scanner.nextLine();
+        String[] command = inputCommand.split(" ");
 
 
 
-        while (!command[0].equals("Go")) {
+        while (!inputCommand.equals("Go Shopping!")) {
             String product = command[1];
 
             if (command[0].equals("Urgent")) {
@@ -38,7 +39,8 @@ public class P02_ShoppingList {
                     itemsList.add(itemsList.size() - 1, product);
                 }
             }
-                command = scanner.nextLine().split(" ");
+                inputCommand =scanner.nextLine();
+                command = inputCommand.split(" ");
         }
         System.out.println(String.join(", ",itemsList));
     }
