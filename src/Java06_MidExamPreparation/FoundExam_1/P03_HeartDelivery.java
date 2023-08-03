@@ -17,15 +17,16 @@ public class P03_HeartDelivery {
 
         int currentIndex = 0; //witch house is copidon located
 
-        String command =scanner.nextLine();
+        String commandInput =scanner.nextLine();
 
-        while (!command.equals("Love!")){
+        while (!commandInput.equals("Love!")){
             //
-            int jumpLength = Integer.parseInt(command.split(" ")[1]);
-            //jumps
-            currentIndex = currentIndex+jumpLength;
+            String[] command = commandInput.split(" ");
+            int jumpToPosition = Integer.parseInt(command[1]);
+            //jumps from previous position
+            currentIndex += jumpToPosition;
             //the house he jumps
-
+            //larger jump length than the size of the neighborhood returns to position 0
             if (currentIndex > houses.length -1){
                 currentIndex=0;
             }
@@ -33,17 +34,16 @@ public class P03_HeartDelivery {
             if (houses[currentIndex] != 0){
                 houses[currentIndex] -= 2;
                 if (houses[currentIndex] == 0){
-                    System.out.printf("Place %d has Valentine's day.",currentIndex);
+                    System.out.printf("Place %d has Valentine's day.%n",currentIndex);
                 }
 
             }else {
 
-                System.out.printf("Place %d already had Valentine's day.",currentIndex);
+                System.out.printf("Place %d already had Valentine's day.%n",currentIndex);
 
             }
 
-
-            command = scanner.nextLine();
+           commandInput =scanner.nextLine();
         }
         System.out.printf("Cupid's last position was %d.%n",currentIndex);
         boolean isFailed = false;
