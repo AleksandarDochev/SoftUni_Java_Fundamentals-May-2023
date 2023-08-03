@@ -1,0 +1,8 @@
+coriander, cloves, paprika, cumin
+AddSpice nutmeg
+AddSpice anise
+AddSpice turmeric
+AddSpice cumin
+SwapSpices coriander paprika
+
+paprika cloves coriander
